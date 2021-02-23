@@ -1,0 +1,8 @@
+{
+    "name": "@mrhenry/failure",
+    "types": "lib/index.ts.d",
+    "main": "lib/index.js",
+    "devDependencies": {
+        "typescript": "4.1.5"
+    }
+}
