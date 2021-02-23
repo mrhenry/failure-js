@@ -1,7 +1,17 @@
 {
     "name": "@mrhenry/failure",
+    "version": "0.0.1",
+    "description": "A failure type for TypeScript",
+    "repository": {
+        "url": "https://github.com/mrhenry/failure-js",
+        "type": "git"
+    },
     "types": "lib/index.ts.d",
     "main": "lib/index.js",
+    "scripts": {
+        "prepack": "tsc",
+        "test": "tsc && node lib/tests.js"
+    },
     "devDependencies": {
         "typescript": "4.1.5"
     }
