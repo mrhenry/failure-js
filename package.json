@@ -17,6 +17,7 @@
     "types": "lib/index.ts.d",
     "main": "lib/index.js",
     "scripts": {
+        "build": "tsc",
         "prepack": "tsc",
         "test": "tsc && node lib/tests.js"
     },
