@@ -6,6 +6,7 @@ export declare class Failure<Details = unknown> {
     static from<Err extends Error>(error: Err): Failure<Err>;
     static from<Details>(message: string, details: Details): Failure<Details>;
     static isFailure(value: unknown): value is Failure;
+    static panicOnFailure<V>(value: V | Failure): asserts value is V;
     get [Symbol.toStringTag](): string;
     toError(): Error;
     toString(): string;
